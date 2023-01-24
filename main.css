@@ -1,11 +1,31 @@
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#site-containter{
-    position: relative;
+.home-back{
+    background-image: url("../JanBoulieProfilePage/images/electric_ballerinas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
+.video-back{
+    background-image: url("../JanBoulieProfilePage/images/big_sky_yellow_grass.jpg");
+    background-repeat: no-repeat;
+    min-height: 100%;
+    background: height 100%;
+    background-size: 119%;
+}
+.contact-back{
+    background-image: url("images/steamy_tree.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.picture-back{
+    background-image: url("images/sandy_rock.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 header{
+    position:relative;
+    display: flex;
     position:relative;
     width: 100%;
     height:auto;
@@ -40,7 +60,17 @@ nav{
     width: 0;
     z-index: 100;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(70, 1, 181);
+}
 
-#background-transition{
-    transition-duration: 0.5s;
+a:active{
+    color: black;
+}
+a:visited{
+    color:rgb(169, 0, 141);
 }
