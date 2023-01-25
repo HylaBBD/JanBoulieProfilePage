@@ -1,16 +1,17 @@
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-@media screen and (min-width:601px){
-    section.about-home{
+
+@media screen and (min-width:601px) {
+    section.about-home {
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 5%;
-        height: 100vh;  
+        height: 100vh;
     }
-    
-    section.contact-home{
+
+    section.contact-home {
         display: flex;
         flex-direction: column;
         background-color: rgba(250, 239, 224, 0.481);
@@ -18,20 +19,23 @@ html {
         align-items: center;
         height: 95vh;
     }
-    section.bio1{
+
+    section.bio1 {
         display: flex;
         min-height: 60vh;
         background-color: rgba(240, 248, 255, 0.627);
         margin-left: 1%;
-        border: radius 2%;;
+        border: radius 2%;
+        ;
     }
-    
-    section.bio1>*:first-child{
-        align-self:auto;
+
+    section.bio1>*:first-child {
+        align-self: auto;
         max-height: 60vh;
         margin-right: 1vw;
     }
-    section.bio2{
+
+    section.bio2 {
         padding-left: 1vw;
         margin-top: 1vh;
         display: flex;
@@ -40,16 +44,18 @@ html {
         border-radius: 10px;
         background-color: rgba(184, 181, 160, 0.523);
     }
-    
-    section.bio2>*:last-child{
+
+    section.bio2>*:last-child {
         align-self: auto;
         margin-left: 1vw;
         max-height: 60vh;
     }
-    p{
+
+    p {
         font-size: 1rem;
     }
-    .home-back{
+
+    .home-back {
         background-image: url("../JanBoulieProfilePage/images/electric_ballerinas.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -57,7 +63,8 @@ html {
         display: flex;
         flex-direction: column;
     }
-    .video-back{
+
+    .video-back {
         background-image: url("../JanBoulieProfilePage/images/big_sky_yellow_grass.jpg");
         background-repeat: no-repeat;
         min-height: 100%;
@@ -65,13 +72,15 @@ html {
         background-size: 119%;
         background-attachment: fixed;
     }
-    .contact-back{
+
+    .contact-back {
         background-image: url("images/steamy_tree.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-attachment: fixed;
     }
-    .picture-back{
+
+    .picture-back {
         display: flex;
         flex-direction: column;
         background-image: url("images/sandy_rock.jpg");
@@ -79,17 +88,56 @@ html {
         background-size: 100%;
         background-attachment: fixed;
     }
+
+    section.pictures {
+        background-color: rgba(247, 239, 228, 0.305);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50vh;
+        max-width: 100vw;
+        align-items: center;
+    }
+
+    /* -----------------------------------------------------Only contact -------------------------------------------------------- */
+    .cute-button {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000000;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow: #1212123c;
+        border-color: #fff;
+        box-sizing: border-box;
+        padding: 1rem 1rem;
+        text-align: center;
+        touch-action: manipulation;
+        outline: none;
+    }
+
+    .cute-button:hover {
+        border-color: #000000;
+    }
+
+    .cute-button:active {
+        color: #fff;
+        background-color: #262626;
+    }
+
+    /* -------------------------------------------------------------------------------------------------------------- */
 }
-@media screen and (max-width:600px) and (orientation:portrait){
-    section.about-home{
+
+@media screen and (max-width:600px) and (orientation:portrait) {
+    section.about-home {
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 5%;
-        height: 100vh;  
+        height: 100vh;
     }
-    
-    section.contact-home{
+
+    section.contact-home {
         display: flex;
         flex-direction: column;
         background-color: rgba(250, 239, 224, 0.481);
@@ -97,23 +145,26 @@ html {
         align-items: center;
         height: 95vh;
     }
-    section.bio1{
+
+    section.bio1 {
         display: flex;
         flex-direction: column;
         min-height: 60vh;
         max-width: 100vw;
         background-color: rgba(240, 248, 255, 0.627);
         margin-left: 1%;
-        border: radius 2%;;
+        border: radius 2%;
+        ;
     }
-    
-    section.bio1>*:first-child{
-        align-self:auto;
+
+    section.bio1>*:first-child {
+        align-self: auto;
         max-height: 60vh;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
-    section.bio2{
+
+    section.bio2 {
         padding-left: 1vw;
         margin-top: 1vh;
         display: flex;
@@ -124,18 +175,20 @@ html {
         border-radius: 10px;
         background-color: rgba(184, 181, 160, 0.523);
     }
-    
-    section.bio2>*:last-child{
+
+    section.bio2>*:last-child {
         align-self: auto;
         margin-top: 1vh;
         margin-bottom: 1vh;
         max-height: 60vh;
-        order:-1;
+        order: -1;
     }
-    p{
+
+    p {
         font-size: 5vh;
     }
-    .home-back{
+
+    .home-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -143,7 +196,8 @@ html {
         display: flex;
         flex-direction: column;
     }
-    .video-back{
+
+    .video-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
         min-height: 100%;
@@ -151,13 +205,15 @@ html {
         background-size: 119%;
         background-attachment: fixed;
     }
-    .contact-back{
+
+    .contact-back {
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-attachment: fixed;
     }
-    .picture-back{
+
+    .picture-back {
         display: flex;
         flex-direction: column;
         background-image: url("images/light_leaf.jpg");
@@ -165,8 +221,39 @@ html {
         background-size: 100%;
         background-attachment: fixed;
     }
+
+    section.pictures {
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: fit-content;
+        max-width: 100vw;
+        align-items: center;
+    }
+    /* -----------------------------------------------------Only contact -------------------------------------------------------- */
+    .cute-button {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000000;
+        cursor: pointer;
+        border-radius: 12px;
+        box-shadow:#1212123c;
+        border-color: #fff;
+        box-sizing: border-box;
+        padding: 1rem 1rem;
+        text-align: center;
+        touch-action: manipulation;
+        outline: none;
+    }
+    .cute-button:active{
+        color: #fff;
+        background-color: #262626;
+    }
+    /* -------------------------------------------------------------------------------------------------------------- */
 }
-.about-profile{
+
+.about-profile {
     height: 30vh;
     display: block;
     margin-left: auto;
@@ -177,23 +264,24 @@ html {
 }
 
 
-h1{
+h1 {
     font-size: 12vh;
-    font-weight:bold;
+    font-weight: bold;
     line-height: 12vh;
     padding-top: 0%;
     margin-top: 5%;
     margin-bottom: 2%;
-    text-shadow:0px 5px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
 }
-h2{
+
+h2 {
     font-size: 2rem;
     font-weight: bolder;
     line-height: 2.5rem;
     align-self: stretch;
 }
 
-.main-page-h2{
+.main-page-h2 {
     font-size: 1rem;
     padding: 1%;
     border-radius: 5%;
@@ -203,120 +291,62 @@ h2{
 }
 
 
-header{
-    position:relative;
+header {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height:auto;
+    height: auto;
     background-color: rgba(195, 179, 159, 0.585);
     border-radius: 50%;
 }
 
-nav{
+nav {
     display: flex;
-    justify-content:space-around;
-    height:auto;
+    justify-content: space-around;
+    height: auto;
     width: 100%;
     position: static;
     display: flexbox;
     grid-template-rows: 1fr;
 }
 
-#mainPage{
-    left:0;
+#mainPage {
+    left: 0;
     margin-left: 0;
     width: 100%;
 }
 
-.cute-button {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    cursor: pointer;
-    border-radius: 12px;
-    box-shadow:#1212123c;
-    border-color: #fff;
-    box-sizing: border-box;
-    padding: 1rem 1rem;
-    text-align: center;
-    touch-action: manipulation;
-    outline: none;
-}
-/* -----------------------------------------------------Only contact -------------------------------------------------------- */
-.cute-button:hover{
-    border-color: #000000;
-}
-.cute-button:active{
-    color: #fff;
-    background-color: #262626;
-}
-/* CSS */
-.button-35 {
-  align-items: center;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-  box-sizing: border-box;
-  color: #121212;
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s,-webkit-box-shadow .2s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-/* -------------------------------------------------------------------------------------------------------------- */
 /* For links at the top */
-a{
+a {
     color: black;
     text-decoration: none;
 }
-a.dark-back{
-    color:aliceblue;
-}
-a:hover{
-    color:rgb(1, 181, 43);
+
+a.dark-back {
+    color: aliceblue;
 }
 
-a.current-page{
+a:hover {
+    color: rgb(1, 181, 43);
+}
+
+a.current-page {
     text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.664);
 }
 
-a:active{
+a:active {
     color: black;
 }
-a:visited{
+
+/* a:visited{
     color:rgb(129, 1, 107);
-}   
+}    */
 
 /* ------------------------------------------------------------ only pictures ----------------------------------- */
 
-section.pictures{
-    background-color: rgba(247, 239, 228, 0.305);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    height: 50vh;
-    max-width: 100vw;
-    align-items: center;
-}
 
-img.pictures{
+img.pictures {
     max-height: 40vh;
     border-radius: 5px;
 }
