@@ -99,6 +99,9 @@ html {
         max-width: 100vw;
         align-items: center;
     }
+    img{
+        margin-top: 1vh;
+    }
 
     /* -----------------------------------------------------Only contact -------------------------------------------------------- */
     .cute-button {
@@ -126,6 +129,9 @@ html {
     }
 
     /* -------------------------------------------------------------------------------------------------------------- */
+    video{
+        max-height: 45vh;
+    }
 }
 
 @media screen and (max-width:600px) and (orientation:portrait) {
@@ -191,7 +197,7 @@ html {
     .home-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100vh;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -209,7 +215,7 @@ html {
     .contact-back {
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100vh;
         background-attachment: fixed;
     }
 
@@ -218,7 +224,7 @@ html {
         flex-direction: column;
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100vh;
         background-attachment: fixed;
     }
 
@@ -251,6 +257,9 @@ html {
         background-color: #262626;
     }
     /* -------------------------------------------------------------------------------------------------------------- */
+    video{
+        max-height: 90vh;
+    }
 }
 
 .about-profile {
@@ -284,10 +293,10 @@ h2 {
 .main-page-h2 {
     font-size: 1rem;
     padding: 1%;
-    border-radius: 5%;
-    align-self: center;
+    border-radius: 5px;
+    text-align: center;
     color: rgba(31, 30, 30, 0.799);
-    background-color: rgba(195, 179, 159, 0.829);
+    background-color: rgba(209, 190, 168, 0.829);
 }
 
 
