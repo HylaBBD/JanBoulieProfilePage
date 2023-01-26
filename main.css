@@ -197,7 +197,7 @@ html {
     .home-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100vh;
+        background-size: 200vh;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -206,8 +206,8 @@ html {
     .video-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
-        min-height: 100%;
-        background: height 100%;
+        min-height: 100vh;
+        background-size: 200vh;
         background-size: 119%;
         background-attachment: fixed;
     }
@@ -215,7 +215,7 @@ html {
     .contact-back {
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100vh;
+        background-size: height 200vh;
         background-attachment: fixed;
     }
 
@@ -224,7 +224,7 @@ html {
         flex-direction: column;
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 100vh;
+        background-size: 200vh;
         background-attachment: fixed;
     }
 
@@ -259,6 +259,10 @@ html {
     /* -------------------------------------------------------------------------------------------------------------- */
     video{
         max-height: 90vh;
+        margin-top: 2vh;
+    }
+    img{
+        margin-top: 2vh;
     }
 }
 
