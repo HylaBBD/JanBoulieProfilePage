@@ -68,8 +68,9 @@ html {
     .home-back {
         background-image: url("../JanBoulieProfilePage/images/electric_ballerinas.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-attachment: fixed;
+        background-position: center top;
         display: flex;
         flex-direction: column;
     }
@@ -77,16 +78,14 @@ html {
     .video-back {
         background-image: url("../JanBoulieProfilePage/images/big_sky_yellow_grass.jpg");
         background-repeat: no-repeat;
-        min-height: 100%;
-        background: height 100%;
-        background-size: 119%;
+        background-size: cover;
         background-attachment: fixed;
     }
 
     .contact-back {
         background-image: url("images/steamy_tree.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-attachment: fixed;
     }
 
@@ -95,7 +94,7 @@ html {
         flex-direction: column;
         background-image: url("images/sandy_rock.jpg");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-attachment: fixed;
     }
 
@@ -216,7 +215,7 @@ html {
     .home-back {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 200vh;
+        background-size: cover;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
@@ -226,15 +225,14 @@ html {
         background-image: url("../JanBoulieProfilePage/images/light_leaf.jpg");
         background-repeat: no-repeat;
         min-height: 100vh;
-        background-size: 200vh;
-        background-size: 119%;
+        background-size: cover;
         background-attachment: fixed;
     }
 
     .contact-back {
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: height 200vh;
+        background-size: cover;
         background-attachment: fixed;
     }
 
@@ -243,7 +241,7 @@ html {
         flex-direction: column;
         background-image: url("images/light_leaf.jpg");
         background-repeat: no-repeat;
-        background-size: 200vh;
+        background-size: cover;
         background-attachment: fixed;
     }
 
@@ -296,6 +294,10 @@ html {
     border-radius: 5%;
 }
 
+about{
+    display: flex;
+    min-height:100vh;
+}
 
 
 h2 {
