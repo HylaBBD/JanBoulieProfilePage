@@ -83,6 +83,10 @@ a:active {
     color: black;
 }
 
+nav a.dropdown{
+    display:none;  
+}
+
 /* a:visited{
     color:rgb(129, 1, 107);
 }    */
@@ -116,32 +120,33 @@ img.pictures {
     max-height: 40vh;
     border-radius: 5vh;
 }
-    /* -----------------------------------------------------Only contact -------------------------------------------------------- */
-    .cute-button {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #000000;
-        cursor: pointer;
-        border-radius: 12px;
-        box-shadow: #1212123c;
-        border-color: #fff;
-        box-sizing: border-box;
-        padding: 1rem 1rem;
-        text-align: center;
-        touch-action: manipulation;
-        outline: none;
-    }
+/* -----------------------------------------------------Only contact -------------------------------------------------------- */
+.cute-button {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: #1212123c;
+    border-color: #fff;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    text-align: center;
+    touch-action: manipulation;
+    outline: none;
+}
 
-    .cute-button:hover {
-        border-color: #000000;
-    }
+.cute-button:hover {
+    border-color: #000000;
+}
 
-    .cute-button:active {
-        color: #fff;
-        background-color: #262626;
-    }
+.cute-button:active {
+    color: #fff;
+    background-color: #262626;
+}
 
-    /* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+
 
 @media screen and (min-width:601px) {
     
@@ -354,7 +359,28 @@ img.pictures {
         margin-top: 2vh;
     }
 }
-/* @media  screen and (max-width:280px) and (orientation:portrait) {
-    nav
-} */
+@media  screen and (max-width:365px) and (orientation:portrait) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 50vw;
+        background-color: rgba(250, 235, 215, 0.693);
+        border-radius: 2vw;
+    }
+    nav a:first-child{
+        display: flex;
+    }
+    nav a:not(:first-child){
+        display: none;
+    }
+    nav.responsive a{
+        float: none;
+        display: flex   ;
+        text-align: center;
+    }
+    nav.responsive a:not(:first-child):hover{
+        background-color: rgba(0, 0, 0, 0.756);
+    }
+}
 
