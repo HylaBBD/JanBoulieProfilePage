@@ -3,10 +3,11 @@
     <head>
         <title>Contact me</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="widthe=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" href="dog_collar_icon.ico" type="image/x-icon">
         <script type="text/javascript" src="script/responsive.js"></script>
+        <script type="text/javascript" src="script/api.js"></script>
     </head>
     <body class="custom-back contact-back">
         <header>
@@ -28,7 +29,11 @@
             <h3>
                 I guess you can press this button if you think I'm cute. I'll definitely know.
             </h3>
-            <button class="cute-button">This button</button>
+            <h3 class="dog-fact" id="dog-fact"></h3>
+            <iframe id="video" src="https://www.youtube.com/embed/qs8caOw2gok? &autoplay=1" title="YouTube video" ></iframe>
+            <button class="cute-button" onclick="buttonClicked()">This button</button>
+           
         </section>
+
     </body>
 </html>
