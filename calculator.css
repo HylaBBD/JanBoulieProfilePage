@@ -24,6 +24,7 @@ section.calculator-buttons>p{
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
+    margin-left: 4vw;
 }
 
 button{
@@ -36,4 +37,24 @@ button{
 }
 button:hover{
     color: rgb(97, 217, 37);
+}
+
+@media screen and (max-width:400px) and (orientation:portrait) {
+    button{
+        font-size:10vw;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+
+    .calculator-buttons>p{
+        align-self: center ;
+        background-color: rgba(240, 248, 255, 0.786);
+        border-radius: 3vw;
+        
+    }
+    .calculator-display{
+        text-align: center;
+        width: 90vw;
+        font-size: 3vw;
+    }
 }

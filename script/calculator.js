@@ -8,7 +8,11 @@ function readIn(id){
             document.getElementById("calculator-content").textContent = "ENTER CALCULATION"
         }
         else{
-            calculation.slice(0,-1);
+            calculation = calculation.slice(0,calculation.length-1);
+            document.getElementById("calculator-content").textContent = calculation;
+            if(calculation=""){
+                document.getElementById("calculator-content").textContent = "ENTER CALCULATION"
+            }
         }
     }
     else{
@@ -16,4 +20,10 @@ function readIn(id){
         document.getElementById("calculator-content").textContent = calculation;
     }
 
+}
+
+function calculateResult(){
+    result = eval(calculation)
+    document.getElementById("calculator-content").textContent = " = "  + result
+    calculation="";
 }
