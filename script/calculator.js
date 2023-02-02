@@ -5,37 +5,37 @@ let storedOperation=[];
 let cumulativeArr=[];
 
 function populateCalc(rawVal){
-    console.log("butts");
+    // console.log("butts");
     floatVal=parseFloat(rawVal);
-    console.log(floatVal);
+    // console.log(floatVal);
     stackCalc.push(floatVal);
-    console.log(stackCalc)
+    // console.log(stackCalc)
 }
 function currentCalc(index,cumuNum){
     let nextItem = stackCalc[index+1];
     let operation = storedOperation[index];
-    console.log("-------------")
-    console.log(cumuNum)
-    console.log(operation)
-    console.log(nextItem)
+    // console.log("-------------")
+    // console.log(cumuNum)
+    // console.log(operation)
+    // console.log(nextItem)
     
-    console.log("------------------")
+    // console.log("------------------")
     let outcome=0;
     switch(operation){
         case "+":
-            console.log("+");
+            // console.log("+");
             outcome=cumuNum+nextItem;
             return outcome;
         case "-":
-            console.log("-");
+            // console.log("-");
             outcome=cumuNum-nextItem;
             return outcome;
         case "/":
-            console.log("/");
+            // console.log("/");
             outcome=cumuNum/nextItem;
             return outcome;
         case "*":
-            console.log("*");
+            // console.log("*");
             outcome=cumuNum*nextItem;
             console.log(outcome);
             return outcome;
@@ -55,7 +55,7 @@ function myEval(){
 
 function calculateResult(){
     let resultMyEval= myEval().toString();
-    console.log("result",resultMyEval)
+    // console.log("result",resultMyEval)
     calculation=resultMyEval
     // document.getElementById("calculator-content").textContent="jjjjjjjjjjjjjj"
     // document.getElementById("calculator-content").textContent = resultMyEval;
@@ -87,18 +87,18 @@ function readIn(id){
         calculation+=value;
         
         if(!isNaN(floatValue)){
-            console.log("inif")
+            // console.log("inif")
             storedCalc+=value;
         }
         else{
-            console.log("inelse")
+            // console.log("inelse")
             if(value=="."){
-                console.log("ininin")
+                // console.log("ininin")
                 storedCalc+=value;
             }
             else{
                 populateCalc(storedCalc);
-                console.log("storednum",storedCalc)
+                // console.log("storednum",storedCalc)
                 storedCalc="";
                 if(value=="="){
                     
